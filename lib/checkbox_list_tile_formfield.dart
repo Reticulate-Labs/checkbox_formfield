@@ -27,9 +27,8 @@ class CheckboxListTileFormField extends FormField<bool> {
           initialValue: initialValue,
           autovalidateMode: autovalidateMode,
           builder: (FormFieldState<bool> state) {
-            errorColor ??= (context == null
-                ? Colors.red
-                : Theme.of(context).colorScheme.error);
+            errorColor ??=
+                (context == null ? Colors.red : Theme.of(context).colorScheme.error);
 
             return CheckboxListTile(
               title: title,
